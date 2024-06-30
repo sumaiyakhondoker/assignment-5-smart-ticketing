@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Ticket</title>
+
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-primary': '#1DD100',
+                'btnbg-primary': '#1DD1001A',
+                'color-gray': '#030712CC',
+                'bg-primary': '#F7F8F8',
+                'text-primary': '#030712',
+
+                
+              }
+            }
+          }
+        }
+      </script>
+    <!-- custom style -->
+     <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body class="font-inter">
+
+    <!-- Bus travel is a chance to sit back, relax, and watch the world go by. It’s a chance to disconnect from everyday life’s distractions and connect with your surroundings. -->
+
+    <header class="font-raleway">
+        <div class="m-2 lg:mx-4 my-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl  lg:text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-color-gray">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-btn-primary border-2 border-btn-primary bg-btnbg-primary lg:px-5 font-bold text-xl">Bus
+                    <img src="images/bus-icon.png" alt="">
+                  </a>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+
+        <!-- banner section -->
+         <section>
+
+            <!-- banner container -->
+            <div class="">
+                <div
+  class="hero  lg:min-h-screen rounded-3xl  "
+  style="background-image: url(images/Rectangle\ 3.png);">
+  <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class=" max-w-3xl p-4 lg:p-0">
+  
+        <h1 class="mb-5 text-3xl lg:text-6xl font-extrabold font-raleway text-white lg:leading-tight">End-to-End Travel with <br>
+       <span class="text-btn-primary">P Paribahan</span></h1>
+    
+      <p class="text-white text-base lg:text-xl lg:pt-2 pb-5 lg:pb-8 lg:leading-7">
+        Bus travel is a chance to sit back, relax, and watch the world go by. It’s a chance to disconnect from everyday life’s distractions and connect with your surroundings.
+      </p>
+      <button class="btn font-raleway bg-btn-primary border-none text-base lg:text-lg font-bold text-text-primary  px-6 ">Buy Tickets</button>
+    </div>
+  </div>
+</div>
+
+            </div>
+         </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
