@@ -37,7 +37,7 @@
 </head>
 <body class="font-inter">
 
-    <!-- Bus travel is a chance to sit back, relax, and watch the world go by. It’s a chance to disconnect from everyday life’s distractions and connect with your surroundings. -->
+    
 
     <header class="font-raleway">
         <div class="m-2 lg:mx-4 my-4">
@@ -61,10 +61,10 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Search</a></li>
                     </ul>
                   </div>
                   <a class="text-2xl  lg:text-4xl font-extrabold">P-Ticket</a>
@@ -128,7 +128,7 @@
     <!-- box 2 container -->
   <div class="flex justify-center gap-5 bg-white px-10 py-8 rounded-3xl border-b-4 border-btn-primary mb-4 lg:mb-0">
 
-    <!-- people icon -->
+    <!-- ticket icon -->
     <div>
       <img src="images/ticket-cupon.png" alt="">
     </div>
@@ -142,7 +142,7 @@
     <!-- box 3 container -->
   <div class="flex justify-center gap-5  bg-white px-10 py-8 rounded-3xl border-b-4 border-btn-primary">
 
-    <!-- people icon -->
+    <!-- stoppage icon -->
     <div>
       <img src="images/stoppage.png" alt="">
     </div>
@@ -189,7 +189,7 @@
                   <img src="images/cupon-devider.png" alt="" class="h-full">
                 </div>
                 <div class=" items-center font-raleway px-10 pt-20 pb-10 lg:px-16 lg:py-20">
-                  <h2 class="text-3xl font-extrabold pb-0 lg:pb-1">Couple 20</h2>
+                  <h2 class="text-3xl font-extrabold pb-0 lg:pb-1 ">couple 20</h2>
                   <p class="text-gray-600 lg:text-lg font-semibold">Coupon Code </p>
 
                 </div>
@@ -230,7 +230,7 @@
                   <div class="mt-4 lg:mt-0" >
                     <button class="btn bg-btnbg-primary w-full ">
                       <img src="images/seat-green.png" alt="">
-                      <p class="text-btn-primary "><span>40</span> Seats left</p>
+                      <p class="text-btn-primary "><span id="seat-left">40</span> Seats left</p>
                     </button>
                   </div>
 
@@ -262,7 +262,7 @@
                 <div class="flex items-center justify-center">
                   <img  src="images/fare.png" alt="">
                 </div>
-                <h3 class="text-2xl font-bold text-text-primary">550 Taka
+                <h3 class="text-2xl font-bold text-text-primary"><span id="price">550</span>Taka
                 </h3>
                 <p class="text-color-gray text-lg font-semibold">Per Seat</p>
               </div>
@@ -308,29 +308,29 @@
                         <p>i</p>
                         <p>j</p>
                       </div>
-                     <!-- <div class="grid grid-cols-4 gap-4" > -->
+                    
                       <div class="grid grid-cols-2 gap-2 lg:gap-5 ">
                   
-                  <button class="btn px-8 lg:px-12">  A1</button>
-                        <button class="btn ">A2</button>
-                        <button class="btn ">B1</button>
-                        <button class="btn ">B2</button>
-                        <button class="btn ">C1</button>
-                        <button class="btn ">C2</button>
-                        <button class="btn ">D1</button>
-                        <button class="btn ">D2</button>
-                        <button class="btn ">E1</button>
-                        <button class="btn ">E2</button>
-                        <button class="btn ">F1</button>
-                        <button class="btn ">F2</button>
-                        <button class="btn ">G1</button>
-                        <button class="btn ">G2</button>
-                        <button class="btn ">H1</button>
-                        <button class="btn ">H2</button>
-                        <button class="btn ">I1</button>
-                        <button class="btn ">I2</button>
-                        <button class="btn ">J1</button>
-                        <button class="btn ">J2</button>
+                  <button id="A1" class="btn Economy px-8 lg:px-12">A1</button>
+                        <button id="A2" class="btn Economy">A2</button>
+                        <button id="B1" class="btn Economy">B1</button>
+                        <button id="B2" class="btn Economy">B2</button>
+                        <button id="C1" class="btn Economy">C1</button>
+                        <button id="C2" class="btn Economy">C2</button>
+                        <button id="D1" class="btn Economy">D1</button>
+                        <button id="D2" class="btn Economy">D2</button>
+                        <button id="E1" class="btn Economy">E1</button>
+                        <button id="E2" class="btn Economy">E2</button>
+                        <button id="F1" class="btn Economy">F1</button>
+                        <button id="F2" class="btn Economy">F2</button>
+                        <button id="G1" class="btn Economy">G1</button>
+                        <button id="G2" class="btn Economy">G2</button>
+                        <button id="H1" class="btn Economy">H1</button>
+                        <button id="H2" class="btn Economy">H2</button>
+                        <button id="I1" class="btn Economy">I1</button>
+                        <button id="I2" class="btn Economy">I2</button>
+                        <button id="J1" class="btn Economy">J1</button>
+                        <button id="J2" class="btn Economy">J2</button>
    
                      
                     </div>
@@ -338,28 +338,28 @@
                    
                  <div class="grid grid-cols-2 gap-2 lg:gap-5">
                 
-                <button class="btn px-8 lg:px-12">A3</button>
-                    <button class="btn ">A4</button>
-                    <button class="btn ">B3</button>
-                    <button class="btn ">B4</button>
-                    <button class="btn ">C3</button>
-                    <button class="btn ">C4</button>
-                    <button class="btn ">D3</button>
-                    <button class="btn ">D4</button>
-                    <button class="btn ">E3</button>
-                    <button class="btn ">E4</button>
-                    <button class="btn ">F3</button>
-                    <button class="btn ">F4</button>
-                    <button class="btn ">G3</button>
-                    <button class="btn ">G4</button>
-                    <button class="btn ">H3</button>
-                    <button class="btn ">H4</button>
-                    <button class="btn ">I3</button>
-                    <button class="btn ">I4</button>
-                    <button class="btn ">J3</button>
-                    <button class="btn ">J4</button>
+                <button id="A3" class="btn Economy px-8 lg:px-12">A3</button>
+                    <button id="A4" class="btn Economy ">A4</button>
+                    <button id="B3" class="btn Economy ">B3</button>
+                    <button id="B4" class="btn Economy">B4</button>
+                    <button id="C3" class="btn Economy">C3</button>
+                    <button id="C4" class="btn Economy">C4</button>
+                    <button id="D3" class="btn Economy">D3</button>
+                    <button id="D4" class="btn Economy">D4</button>
+                    <button id="E3" class="btn Economy">E3</button>
+                    <button id="E4" class="btn Economy">E4</button>
+                    <button id="F3" class="btn Economy">F3</button>
+                    <button id="F4" class="btn Economy">F4</button>
+                    <button id="G3" class="btn Economy">G3</button>
+                    <button id="G4" class="btn Economy">G4</button>
+                    <button id="H3" class="btn Economy">H3</button>
+                    <button id="H4" class="btn Economy">H4</button>
+                    <button id="I3" class="btn Economy">I3</button>
+                    <button id="I4" class="btn Economy">I4</button>
+                    <button id="J3" class="btn Economy">J3</button>
+                    <button id="J4" class="btn Economy">J4</button>
                     
-                    
+
                    </div>
 
                    </div>
@@ -370,26 +370,26 @@
                 <div class="lg:pl-10">
                   <h4 class="text-2xl font-semibold pb-3 lg:pb-5 border-b-2 border-dashed border-gray-300 pt-8 lg:pt-0">Select Your Seat</h4>
 
-                  <div class="bg-bg-primary rounded-xl p-4 mt-4 lg:mt-8">
+                  <div class="bg-bg-primary rounded-xl p-8 mt-4 lg:mt-8">
                     <div class="flex font-semibold justify-between pb-3 border-b-2 border-dashed border-gray-300">
-                      <div class="items-center">Seat <sup class="text-sm bg-btn-primary px-2 rounded-md text-white font-medium"> 0</sup></div>
+                      <div class="items-center">Seat <sup class="text-sm bg-btn-primary px-2 rounded-md text-white font-medium" id="seat-number"> 0</sup></div>
                       <div>Class</div>
                       <div>Price</div>
                     </div>
 
                     <!-- selected ticket container -->
-                     <div id="selected-ticket-container"></div>
+                     <div id="selected-ticket-container" class="text-color-gray "></div>
                      <hr>
 
-                     <h4 class="flex justify-between pt-3 font-semibold">Total price: <span >BDT <span id="total-price">0</span></span></h4>
+                     <h4 class="flex border-b-2 border-dashed border-gray-300  justify-between py-3  font-semibold">Total price: <span >BDT <span id="total-price">0</span></span></h4>
 
                      <!-- input field -->
-                     <div class="flex my-4 bg-white rounded-xl p-1 border">
-                      <input type="text" placeholder="Have any coupon?" class="input  w-full border-none" />
-                      <button class="btn bg-btn-primary text-white   ">Apply</button>
+                     <div id="input-field" class="flex mt-4 bg-white rounded-xl p-1 border">
+                      <input type="text" placeholder="Have any coupon?" class="input  w-full border-none" id="coupon" />
+                      <button onclick="getGrandTotalPrice('apply-button')" class="btn bg-btn-primary text-white" id="apply-btn">Apply</button>
                   </div>
 
-                  <h4 class="flex justify-between font-semibold">Grand Total: <span>BDT <span id="grand-total">0</span></span></h4>
+                  <h4 class="flex justify-between font-semibold pt-3">Grand Total: <span>BDT <span id="grand-total">0</span></span></h4>
                     
 
                   </div>
@@ -399,7 +399,7 @@
                     <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Passenger Name*</h4>
                     <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
                     <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Phone Number*</h4>
-                    <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full " />
+                    <input  type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
                     <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Email ID</h4>
                     <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" /><br>
 
@@ -448,7 +448,7 @@
 
     <!-- footer -->
       <footer class=" bg-text-primary text-center lg:text-left text-white p-5  lg:px-32 lg:py-28">
-        <!-- <aside> -->
+       
          <div class="flex flex-col  gap-12 lg:gap-0 lg:flex-row  lg:justify-between pb-6 lg:pb-8 border-dashed border-b-2 border-gray-500">
           <div>
             <h2 class="text-3xl font-bold font-raleway pb-2 lg:pb-3">P-Ticket</h2>
@@ -457,26 +457,29 @@
                daily commuting better.
             </p>
           </div>
-          <!-- </aside> -->
-          <!-- <nav> -->
+          
+         
             <div class="flex flex-row gap-8 lg:gap-0 items-center lg:flex-col">
             <h6 class="font-raleway text-lg pb-2 lg:pb-3">Download our app</h6>
-            <div class="flex   items-center gap-4  p-2 border-2 border-gray-400 rounded-xl w-2/3 lg:w-full">
-              <div>
-                <a>
-                  <img src="images/playstore.png.png" alt="">
-                </a>
+            
+            
+              <div class="flex items-center gap-4  p-2 border-2 border-gray-400 rounded-xl w-2/3 lg:w-full">
+                <div>
+                 
+                    <img src="images/playstore.png.png" alt="">
+                
+                </div>
+                <div>
+                  <p class="uppercase">Get it on</p>
+                  <h3 class="text-lg font-semibold">Google Play</h3>
+                </div>
+                
+                
               </div>
-              <div>
-                <p class="uppercase">Get it on</p>
-                <h3 class="text-lg font-semibold">Google Play</h3>
-              </div>
-              
-              
-            </div>
+          
           </div>
          </div>
-        <!-- </nav> -->
+       
 
         
           
